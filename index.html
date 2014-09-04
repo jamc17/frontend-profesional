@@ -5,45 +5,86 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Frontend: Esto va a ser un blog en foundation</title>
 	<link rel="stylesheet" href="foundation/css/foundation.css" />
-    <script src="foundation/js/vendor/modernizr.js"></script>
+	<script src="foundation/js/vendor/modernizr.js"></script>
 </head>
 <body>
+	<header class="row">
+		<h1>Blog Basado en foundation</h1>
+        <nav class="top-bar" data-topbar role="navigation">
+          <ul class="title-area">
+            <li class="name">
+            </li>
+             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="active"><a href="#">Right Button Active</a></li>
+              <li class="has-dropdown">
+                <a href="#">Right Button Dropdown</a>
+                <ul class="dropdown">
+                  <li><a href="#">First link in dropdown</a></li>
+                  <li class="active"><a href="#">Active link in dropdown</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Left Nav Section -->
+            <ul class="left">
+              <li><a href="#">Left Nav Button</a></li>
+            </ul>
+          </section>
+        </nav>
+	</header>
+    
+
 	<section class="row">
-		<article class="small-6 columns">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quis facere, alias maxime aspernatur quidem voluptates tempore velit ducimus consequatur aliquid doloremque fugit quod mollitia molestias magnam similique vero perferendis?	
-		</article>
+		<section class="small-12 medium-8 large-7 columns">
+			<article class="row panel">
+				<h2>Titulo del post</h2>
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quis facere, alias maxime aspernatur quidem voluptates tempore velit ducimus consequatur aliquid doloremque fugit quod mollitia molestias magnam similique vero perferendis?</p>
+				<a href="#" class="button radius round small">Ir al post</a>
+			</article>
+
+			<article class="row panel">
+				<h2>Titulo del post</h2>
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quis facere, alias maxime aspernatur quidem voluptates tempore velit ducimus consequatur aliquid doloremque fugit quod mollitia molestias magnam similique vero perferendis?</p>
+				<a href="" class="button radius round small">Ir al post</a>
+			</article>
+		</section>
+
 		
-		<article class="small-6 columns">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quis facere, alias maxime aspernatur quidem voluptates tempore velit ducimus consequatur aliquid doloremque fugit quod mollitia molestias magnam similique vero perferendis?	
-		</article>
-	</section>
+		<section class="small-12 medium-4 large-4 columns">
+			<section class="row" data-equalizer>
+				<article class="small-6 columns panel" data-equalizer-watch>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quis facere, alias maxime             
+				</article>
+				<article class="small-6 columns panel" data-equalizer-watch>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quis facere, alias maxime dasf asdf asdf af       
+				</article>
+			</section>
 
-	<section class="row">
-		<article class="small-4 columns">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ratione voluptates ad laudantium, officiis aspernatur quae. Perspiciatis rerum mollitia molestias quae dicta, sit vitae harum aperiam, ab quas beatae praesentium.
-		</article>
-		<article class="small-4 columns">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quis facere, alias maxime aspernatur quidem voluptates tempore velit ducimus consequatur aliquid doloremque fugit quod mollitia molestias magnam similique vero perferendis?	
-		</article>
-		<article class="small-4 columns">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quis facere, alias maxime aspernatur quidem voluptates tempore velit ducimus consequatur aliquid doloremque fugit quod mollitia molestias magnam similique vero perferendis?	
-		</article>
-	</section>
-
-	<section class="row">
-		<article class="small-6 columns">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quasi in sequi repellat nam molestiae at iure tempore error eveniet similique natus sunt voluptatum, neque nisi dolores modi libero. Quasi.
-		</article>
-		<article class="small-6 columns">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quis facere, alias maxime aspernatur quidem voluptates tempore velit ducimus consequatur aliquid doloremque fugit quod mollitia molestias magnam similique vero perferendis?	
-		</article>
+			<section class="row" data-equalizer>
+				<article class="small-6 columns panel" data-equalizer-watch>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quis facere, alias maxime             
+				</article>
+				<article class="small-6 columns panel" data-equalizer-watch>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quis facere, alias maxime dasf asdf asdf af       
+				</article>
+			</section>
+		</section>
 	</section>
 
 
 	<script src="foundation/js/vendor/jquery.js"></script>
-    <script src="foundation/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+	<script src="foundation/js/foundation.min.js"></script>
+	<script src="foundation/js/foundation/foundation.equalizer.js"></script>
+	<script>
+	  $(document).foundation();
+	</script>
 </body>
 </html>
